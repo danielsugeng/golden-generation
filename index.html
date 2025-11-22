@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Golden Generation - Solusi digital marketing lengkap untuk bisnis Anda. Content Creator, Talent, Social Media Management, dan Web Design profesional.">
+    <meta name="keywords" content="digital marketing, content creator, social media management, web design, talent, jakarta">
+    <meta name="author" content="Golden Generation">
+    <meta name="theme-color" content="#d4af37">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GOLDEN GENERATION - Your End-to-End Marketing Solutions">
+    <meta property="og:description" content="Solusi digital marketing lengkap yang membantu bisnis kamu tumbuh lebih cepat">
+    <meta property="og:image" content="/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="GOLDEN GENERATION - Your End-to-End Marketing Solutions">
+    <meta property="twitter:description" content="Solusi digital marketing lengkap yang membantu bisnis kamu tumbuh lebih cepat">
+    
     <title>GOLDEN GENERATION - Your End-to-End Marketing Solutions</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- External CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
     <style>
         * {
             margin: 0;
@@ -737,7 +765,6 @@
             <div class="row">
                 <div class="col-lg-6 mb-4">
                     <div class="portfolio-video">
-
                         <iframe src="https://www.youtube.com/embed/n3s3Ohe7R94" title="Portfolio Video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <p class="portfolio-description">Cinematic Video - Baron's House</p>
@@ -745,7 +772,6 @@
                 
                 <div class="col-lg-6 mb-4">
                     <div class="portfolio-video">
-                        
                         <iframe src="https://www.youtube.com/embed/n_mdueTkAMs" title="Portfolio Video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <p class="portfolio-description">Event Video - Baron's House</p>
@@ -753,7 +779,6 @@
                 
                 <div class="col-lg-6 mb-4">
                     <div class="portfolio-video">
-                        
                         <iframe src="https://www.youtube.com/embed/NFsohIOmkXM" title="Portfolio Video 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <p class="portfolio-description">Event Video - Grebeg Sudiro</p>
@@ -761,95 +786,4 @@
                 
                 <div class="col-lg-6 mb-4">
                     <div class="portfolio-video">
-                        
-                        <iframe src="https://www.youtube.com/embed/BOv3qHgY8vc" title="Portfolio Video 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <p class="portfolio-description">Cinematic Video - Singosaren Plaza</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section id="contact" class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>📝 Siap membawa brand kamu ke level selanjutnya?</h2>
-                <p>Hubungi kami sekarang untuk konsultasi gratis dan dapatkan solusi marketing terbaik untuk bisnis kamu!</p>
-                <a href="https://wa.me/6285602646004" target="_blank" class="btn-gold">👉 Hubungi Kami Sekarang</a>
-                <div class="contact-number">085602646004</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 GOLDEN GENERATION. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    // Close mobile menu after click
-                    const navbarCollapse = document.querySelector('.navbar-collapse');
-                    if (navbarCollapse.classList.contains('show')) {
-                        const bsCollapse = new bootstrap.Collapse(navbarCollapse);
-                        bsCollapse.hide();
-                    }
-                }
-            });
-        });
-
-        // Section animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('section').forEach(section => {
-            observer.observe(section);
-        });
-
-        // Navbar background on scroll
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.background = 'rgba(0, 0, 0, 0.98)';
-                navbar.style.boxShadow = '0 2px 20px rgba(212, 175, 55, 0.1)';
-            } else {
-                navbar.style.background = 'rgba(0, 0, 0, 0.95)';
-                navbar.style.boxShadow = 'none';
-            }
-        });
-
-        // Service Worker Registration
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js').then(
-                    registration => console.log('SW registered:', registration),
-                    err => console.log('SW registration failed:', err)
-                );
-            });
-        }
-    </script>
-</body>
-</html>
+                        <iframe src="https://www.youtube.com/embed/BOv3qHgY8vc" title="Portfolio Video 4" frameborder="0" allow="accelerometer; autoplay; clipboar
