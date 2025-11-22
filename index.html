@@ -8,17 +8,6 @@
     <meta name="author" content="Golden Generation">
     <meta name="theme-color" content="#d4af37">
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="GOLDEN GENERATION - Your End-to-End Marketing Solutions">
-    <meta property="og:description" content="Solusi digital marketing lengkap yang membantu bisnis kamu tumbuh lebih cepat">
-    <meta property="og:image" content="/images/og-image.jpg">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="GOLDEN GENERATION - Your End-to-End Marketing Solutions">
-    <meta property="twitter:description" content="Solusi digital marketing lengkap yang membantu bisnis kamu tumbuh lebih cepat">
-    
     <title>GOLDEN GENERATION - Your End-to-End Marketing Solutions</title>
     
     <!-- Favicon -->
@@ -30,10 +19,8 @@
     <!-- PWA Manifest -->
     <link rel="manifest" href="/manifest.json">
     
-    <!-- External CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-    
     <style>
         * {
             margin: 0;
@@ -48,7 +35,6 @@
             overflow-x: hidden;
         }
 
-        /* Navbar */
         .navbar {
             background: rgba(0, 0, 0, 0.95) !important;
             backdrop-filter: blur(10px);
@@ -92,7 +78,6 @@
             width: 80%;
         }
 
-        /* Hamburger Animation */
         .navbar-toggler {
             border: none;
             padding: 0;
@@ -122,17 +107,9 @@
             transition: .25s ease-in-out;
         }
 
-        .hamburger span:nth-child(1) {
-            top: 0px;
-        }
-
-        .hamburger span:nth-child(2) {
-            top: 10px;
-        }
-
-        .hamburger span:nth-child(3) {
-            top: 20px;
-        }
+        .hamburger span:nth-child(1) { top: 0px; }
+        .hamburger span:nth-child(2) { top: 10px; }
+        .hamburger span:nth-child(3) { top: 20px; }
 
         .navbar-toggler[aria-expanded="true"] .hamburger span:nth-child(1) {
             top: 10px;
@@ -149,7 +126,6 @@
             transform: rotate(-135deg);
         }
 
-        /* Hero Section */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -274,7 +250,6 @@
             box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
         }
 
-        /* Section Styling */
         section {
             padding: 100px 0;
             opacity: 0;
@@ -298,7 +273,6 @@
             background-clip: text;
         }
 
-        /* Why Section */
         .why-card {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
@@ -321,7 +295,6 @@
             margin-bottom: 0.5rem;
         }
 
-        /* Services Section */
         .service-card {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
@@ -351,7 +324,6 @@
             margin-bottom: 1rem;
         }
 
-        /* Packages Section */
         .package-card {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
@@ -426,7 +398,6 @@
             margin-right: 0.5rem;
         }
 
-        /* Portfolio Section */
         .portfolio-video {
             position: relative;
             padding-bottom: 56.25%;
@@ -455,7 +426,6 @@
             font-size: 0.95rem;
         }
 
-        /* CTA Section */
         .cta-section {
             background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
             padding: 80px 0;
@@ -500,7 +470,6 @@
             margin-top: 1rem;
         }
 
-        /* Footer */
         footer {
             background: #000;
             padding: 2rem 0;
@@ -513,53 +482,24 @@
             margin: 0;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero h2 {
-                font-size: 1.3rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .btn-gold, .btn-outline-gold {
-                padding: 12px 25px;
-                font-size: 0.95rem;
-            }
-
-            .package-title {
-                font-size: 1.5rem;
-            }
-
-            .package-price {
-                font-size: 2rem;
-            }
-
-            .cta-content h2 {
-                font-size: 2rem;
-            }
-
-            .contact-number {
-                font-size: 1.5rem;
-            }
+            .hero h1 { font-size: 2.5rem; }
+            .hero h2 { font-size: 1.3rem; }
+            .hero p { font-size: 1rem; }
+            .section-title { font-size: 2rem; }
+            .btn-gold, .btn-outline-gold { padding: 12px 25px; font-size: 0.95rem; }
+            .package-title { font-size: 1.5rem; }
+            .package-price { font-size: 2rem; }
+            .cta-content h2 { font-size: 2rem; }
+            .contact-number { font-size: 1.5rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#home">GOLDEN GENERATION</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <div class="hamburger">
                     <span></span>
                     <span></span>
@@ -579,7 +519,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero visible">
         <div class="container">
             <div class="hero-content">
@@ -594,7 +533,6 @@
         </div>
     </section>
 
-    <!-- Why Section -->
     <section id="why">
         <div class="container">
             <h2 class="section-title">⭐ Mengapa Golden Generation?</h2>
@@ -633,7 +571,6 @@
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services">
         <div class="container">
             <h2 class="section-title">🚀 Layanan Kami</h2>
@@ -685,7 +622,6 @@
         </div>
     </section>
 
-    <!-- Packages Section -->
     <section id="packages">
         <div class="container">
             <h2 class="section-title">💼 Paket Layanan</h2>
@@ -756,12 +692,10 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
     <section id="portfolio">
         <div class="container">
             <h2 class="section-title">🎬 Portfolio Kami</h2>
             <p class="text-center text-muted mb-5">Hasil Video Cinematic by GOLDEN GENERATION</p>
-            
             <div class="row">
                 <div class="col-lg-6 mb-4">
                     <div class="portfolio-video">
@@ -769,21 +703,101 @@
                     </div>
                     <p class="portfolio-description">Cinematic Video - Baron's House</p>
                 </div>
-                
                 <div class="col-lg-6 mb-4">
                     <div class="portfolio-video">
                         <iframe src="https://www.youtube.com/embed/n_mdueTkAMs" title="Portfolio Video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <p class="portfolio-description">Event Video - Baron's House</p>
                 </div>
-                
                 <div class="col-lg-6 mb-4">
                     <div class="portfolio-video">
                         <iframe src="https://www.youtube.com/embed/NFsohIOmkXM" title="Portfolio Video 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <p class="portfolio-description">Event Video - Grebeg Sudiro</p>
                 </div>
-                
                 <div class="col-lg-6 mb-4">
                     <div class="portfolio-video">
-                        <iframe src="https://www.youtube.com/embed/BOv3qHgY8vc" title="Portfolio Video 4" frameborder="0" allow="accelerometer; autoplay; clipboar
+                        <iframe src="https://www.youtube.com/embed/BOv3qHgY8vc" title="Portfolio Video 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="portfolio-description">Cinematic Video - Singosaren Plaza</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>📝 Siap membawa brand kamu ke level selanjutnya?</h2>
+                <p>Hubungi kami sekarang untuk konsultasi gratis dan dapatkan solusi marketing terbaik untuk bisnis kamu!</p>
+                <a href="https://wa.me/6285602646004" target="_blank" class="btn-gold">👉 Hubungi Kami Sekarang</a>
+                <div class="contact-number">085602646004</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 GOLDEN GENERATION. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                        bsCollapse.hide();
+                    }
+                }
+            });
+        });
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(0, 0, 0, 0.98)';
+                navbar.style.boxShadow = '0 2px 20px rgba(212, 175, 55, 0.1)';
+            } else {
+                navbar.style.background = 'rgba(0, 0, 0, 0.95)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').then(
+                    registration => console.log('SW registered:', registration),
+                    err => console.log('SW registration failed:', err)
+                );
+            });
+        }
+    </script>
+</body>
+</html>
