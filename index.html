@@ -426,6 +426,30 @@
             font-size: 0.95rem;
         }
 
+        .client-logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            justify-items: center;
+            align-items: center;
+            padding: 2rem 0;
+        }
+
+        .client-logo {
+            max-width: 150px;
+            height: auto;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+            padding: 1rem;
+        }
+
+        .client-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
         .cta-section {
             background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
             padding: 80px 0;
