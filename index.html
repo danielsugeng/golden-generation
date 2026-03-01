@@ -428,7 +428,7 @@
 
         .client-logo-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             justify-items: center;
             align-items: center;
@@ -436,8 +436,10 @@
         }
 
         .client-logo {
-            max-width: 150px;
-            height: auto;
+            max-width: 300px;
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
             filter: grayscale(100%);
             opacity: 0.7;
             transition: all 0.3s ease;
@@ -721,14 +723,10 @@
             <h2 class="section-title">🏆 Yang Sudah Mempercayai Kami</h2>
             <p class="text-center text-muted mb-5">Klien-klien yang telah bekerja sama dengan GOLDEN GENERATION</p>
             <div class="client-logo-grid">
-                <!-- Tambahkan logo klien Anda di bawah ini -->
-                <!-- Ganti 'clients/your-logo.png' dengan path file logo Anda -->
-                <img src="clients/client1.png" alt="Client 1" class="client-logo" onerror="this.style.display='none'">
-                <img src="clients/client2.png" alt="Client 2" class="client-logo" onerror="this.style.display='none'">
-                <img src="clients/client3.png" alt="Client 3" class="client-logo" onerror="this.style.display='none'">
-                <img src="clients/client4.png" alt="Client 4" class="client-logo" onerror="this.style.display='none'">
-                <img src="clients/client5.png" alt="Client 5" class="client-logo" onerror="this.style.display='none'">
-                <img src="clients/client6.png" alt="Client 6" class="client-logo" onerror="this.style.display='none'">
+                <img src="clients/BARON.png" alt="BARON" class="client-logo">
+                <img src="clients/PESEK.png" alt="PESEK" class="client-logo">
+                <img src="clients/SPARTA.png" alt="SPARTA" class="client-logo">
+                <img src="clients/TI.png" alt="TI" class="client-logo">
             </div>
         </div>
     </section>
